@@ -1,7 +1,7 @@
 # ReRust 🦀
 
 [![npm version](https://img.shields.io/npm/v/rerust.svg)](https://www.npmjs.com/package/rerust)
-[![JSR](https://jsr.io/badges/@jimfilippou/rerust)](https://jsr.io/badges/@jimfilippou/rerust)
+[![JSR](https://jsr.io/badges/@jimfilippou/rerust)](https://jsr.io/@jimfilippou/rerust)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/rerust)](https://bundlephobia.com/package/rerust)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
