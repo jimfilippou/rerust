@@ -1,0 +1,45 @@
+{
+  "name": "rerust",
+  "version": "0.1.0",
+  "description": "Rust-inspired error handling for TypeScript",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "typescript",
+    "rust",
+    "result",
+    "error-handling"
+  ],
+  "author": "Dimitrios Filippou <info@jimfilippou.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "8.3.5",
+    "typescript": "5.7.2",
+    "vitest": "2.1.8"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
