@@ -1,11 +1,11 @@
 # ReRust 🦀
 
 [![npm version](https://img.shields.io/npm/v/rerust.svg)](https://www.npmjs.com/package/rerust)
+[![JSR](https://jsr.io/badges/@jimfilippou/rerust)](https://jsr.io/badges/@jimfilippou/rerust)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/rerust)](https://bundlephobia.com/package/rerust)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 [![No Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](package.json)
-[![JSR Registry](https://img.shields.io/badge/JSR-Registry-purple.svg)](https://jsr.io/@jimfilippou/rerust)
 
 Zero-dependency, type-safe error handling inspired by Rust's Result type. Say goodbye to try-catch blocks and hello to elegant error handling!
 
