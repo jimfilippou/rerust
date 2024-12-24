@@ -80,7 +80,7 @@ async function handleUserProfile() {
 ### After ReRust
 
 ```typescript
-import { ok, err, isOk, type Result } from "rerust";
+import { ok, err, isOk, isErr, type Result } from "rerust";
 
 async function getUserData(userId: string): Promise<Result<UserData>> {
   const response = await fetch(`/api/users/${userId}`)
@@ -97,13 +97,9 @@ async function getUserData(userId: string): Promise<Result<UserData>> {
 
 // Usage
 async function handleUserProfile() {
-  const result = await getUserData("123");
-
-  if (isOk(result)) {
-    updateUI(result.value);
-  } else {
-    showError(result.value); // Type-safe error message
-  }
+  const res = await getUserData("123");
+  if (isErr(res)) return showError(result.value); // Type-safe error message
+  updateUI(result.value);
 }
 ```
 
