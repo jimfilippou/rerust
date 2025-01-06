@@ -1,4 +1,4 @@
-# ReRust 🦀
+# rerust
 
 [![npm version](https://img.shields.io/npm/v/rerust.svg)](https://www.npmjs.com/package/rerust)
 [![JSR](https://jsr.io/badges/@jimfilippou/rerust)](https://jsr.io/@jimfilippou/rerust)
@@ -14,7 +14,6 @@ Zero-dependency, type-safe error handling inspired by Rust's Result type. Say go
 - 🚀 **Zero Dependencies** - Lightweight and blazing fast
 - 💪 **Type Safe** - Full TypeScript support with type inference
 - 🌐 **Universal** - Works in Node.js, Bun, Deno, and browsers
-- 🎯 **Tree Shakeable** - Only import what you need
 - 📦 **Tiny** - Less than 300 bytes minified + gzipped
 
 ## Installation
@@ -31,6 +30,25 @@ pnpm add rerust
 
 # JSR registry
 npx jsr add @jimfilippou/rerust
+```
+
+## Usage
+
+```typescript
+import { ok, err, isOk, type Result } from "rerust";
+
+function divide(a: number, b: number): Result<number> {
+  if (b === 0) return err("Division by zero");
+  return ok(a / b);
+}
+
+const result = divide(10, 2);
+
+if (isOk(result)) {
+  console.log("Result:", result.value);
+} else {
+  console.error("Error:", result.value);
+}
 ```
 
 ## Sponsors
